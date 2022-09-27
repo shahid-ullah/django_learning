@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
+{% comment %} <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -11,4 +12,8 @@
         <a href="{% url 'about' %}">about</a>
         <h1>about page</h1>
     </body>
-</html>
+</html> {% endcomment %}
+{% comment %} <h1>about page</h1> {% endcomment %}
+{% block custom %}
+    <h1>about page</h1>
+{% endblock custom %}
